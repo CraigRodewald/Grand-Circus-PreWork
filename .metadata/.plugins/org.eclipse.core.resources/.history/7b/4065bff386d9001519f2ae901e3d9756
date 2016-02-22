@@ -1,0 +1,21 @@
+class Robot{
+	public void speak(String speech){
+		
+		System.out.println(speech);
+	}
+	
+	public void jumb(int height){
+		
+		System.out.println("Jumping: " + height);
+	}
+}
+
+public class MethodParameters {
+	public static void main(String[] args) {
+		
+		Robot sam = new Robot();
+		
+		sam.speak("Hi, I am Sam.");
+		sam.jumb(7);
+	}
+}

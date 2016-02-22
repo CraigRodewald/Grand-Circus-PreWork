@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class InvertNumber {
+	public static void main(String[] args) {
+		
+		// Initialize scanner object and variables
+		Scanner input = new Scanner(System.in);
+		int userInput = 0;
+		int invertedNumber = 0;
+		
+		// Get user input
+		System.out.println("Please enter a number: ");
+		userInput = input.nextInt();
+		
+		// Do math
+		while (userInput > 0) {
+			invertedNumber = invertedNumber + (userInput % 10);
+			invertedNumber = invertedNumber * 10;
+			
+			userInput = userInput / 10;
+		}
+		
+		System.out.println(invertedNumber);
+		
+		input.close();
+	}
+}

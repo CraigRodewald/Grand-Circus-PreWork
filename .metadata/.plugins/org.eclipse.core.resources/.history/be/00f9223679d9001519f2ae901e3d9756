@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class GetUserInput {
+	public static void main(String[] args) {
+	//Ctrl + Shift + O imports needed libraries
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a line of text: ");
+		String line = input.nextLine();
+		
+		System.out.println("You entered: " + line);
+	}
+}
